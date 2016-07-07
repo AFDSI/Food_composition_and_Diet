@@ -1,0 +1,234 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/amicroformat/arecipe/>
+  a owl:Ontology ;
+  rdfs:comment "The hRecipe microformat is designed for the mark-up of instructions for creating meals, drinks or food-based items. <http://microformats.org/wiki/recipe#Introduction>", "This ontology is only informative. The normative version is always that on the site <http://microformats.org>.", "microformats are a way to encode semantic information into (x)html. they define formats that share one common namespace. this piece of work defines a mapping from the hRecipe microformat into RDF by mirroring the  elements of that microformat as straight as possible into an RDF vocabulary." ;
+  rdfs:label "aRecipe" ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe> ;
+  owl:versionInfo "28042009", "Draft 0.21" .
+
+<http://purl.org/amicroformat/arecipe/Recipe>
+  a owl:Class ;
+  rdfs:comment "A Recipe is used to identify and describe values and metadata typically associated with a recipe." ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#hRecipe> ;
+  rdfs:label "recipe" ;
+  rdfs:subclassOf [
+    a owl:Restriction ;
+    owl:cardinality "1"^^xsd:int ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/fn>
+  ], [
+    a owl:Restriction ;
+    owl:minCardinality "1"^^xsd:int ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/ingredient>
+  ], [
+    a owl:Restriction ;
+    owl:maxCardinality "1"^^xsd:int ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/instructions>, <http://purl.org/amicroformat/arecipe/published>, <http://purl.org/amicroformat/arecipe/summary>, <http://purl.org/amicroformat/arecipe/yield>
+  ], [
+    a owl:Restriction ;
+    owl:minCardinality "0"^^xsd:int ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/author>, <http://purl.org/amicroformat/arecipe/duration>, <http://purl.org/amicroformat/arecipe/nutrition>, <http://purl.org/amicroformat/arecipe/photo>, <http://purl.org/amicroformat/arecipe/tag>
+  ] .
+
+<http://purl.org/amicroformat/arecipe/author>
+  a owl:DatatypeProperty ;
+  rdfs:comment "An Author is the person who authored the recipe." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hAtom#Entry_Author> ;
+  rdfs:label "author" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe#author> .
+
+<http://purl.org/amicroformat/arecipe/duration>
+  a owl:DatatypeProperty ;
+  rdfs:comment "The time it takes to prepare the meal described by the recipe. Multiple duration fields can be used to denote e.g. time for preparing a dough, time needed for the dough to raise, time to bake the dough, time for decorating the cake etc." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#duration> ;
+  rdfs:label "duration" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/fn>
+  a owl:DatatypeProperty ;
+  rdfs:comment "The title of a single recipe. A short textual description used to identify the work among interested parties. This can be the name of a meal or a short description regarding it's ingredients." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hCard> ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe#fn> .
+
+<http://purl.org/amicroformat/arecipe/ingredient>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Describes one or more ingredients used in the recipe." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#ingredient> ;
+  rdfs:label "ingredient" ;
+  rdfs:range <http://purl.org/amicroformat/arecipe/IngredientClass>, xsd:string .
+
+<http://purl.org/amicroformat/arecipe/instructions>
+  a owl:DatatypeProperty ;
+  rdfs:comment "The method of the recipe." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#instructions> ;
+  rdfs:label "instructions" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/nutrition>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Nutritional information like calories, fat, dietary fiber etc. " ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#nutrition> ;
+  rdfs:label "nutrition" ;
+  rdfs:range <http://purl.org/amicroformat/arecipe/NutritionClass>, xsd:string .
+
+<http://purl.org/amicroformat/arecipe/photo>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Accompanying image. ", "See section 3.1.4 of RFC 2426. <http://www.ietf.org/rfc/rfc2426.txt>" ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hcard> ;
+  rdfs:label "photo" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe#photo> .
+
+<http://purl.org/amicroformat/arecipe/published>
+  a owl:DatatypeProperty ;
+  rdfs:comment "The date the recipe was published." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hAtom#Entry_Published> ;
+  rdfs:label "published" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe#published> .
+
+<http://purl.org/amicroformat/arecipe/summary>
+  a owl:DatatypeProperty ;
+  rdfs:comment "The summary provides a short introduction or an accompanying statement about the recipe." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hCalendar>, <http://microformats.org/wiki/hrecipe#summary> ;
+  rdfs:label "summary" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/tag>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Indicates that the referred resource serves as a 'tag', or keyword/subject, for the referring page." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/rel-tag#XMDP_profile> ;
+  rdfs:label "rel-tag" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso <http://microformats.org/wiki/hrecipe#tag> .
+
+<http://purl.org/amicroformat/arecipe/type>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Defines a type of the parent element. For instance a type of telephone number such as home or work. Used in conjunction with 'value'. <http://microformats.org/wiki/existing-classes>", "See 'type' in the various sections of RFC 2426. <http://www.ietf.org/rfc/rfc2426.txt>" ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/IngredientClass>, <http://purl.org/amicroformat/arecipe/NutritionClass> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hcard> ;
+  rdfs:label "type" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/value>
+  a owl:DatatypeProperty ;
+  rdfs:comment "This class name is used to distinguish the actual *value* of a property from any other cruft that may be in the element representing the property. <http://www.ietf.org/rfc/rfc2426.txt>", "Used in conjunction with 'type'. The actual value of a particular type. For instance a telephone number of type work such as +1.415.555.1212.  <http://microformats.org/wiki/existing-classes>" ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/IngredientClass>, <http://purl.org/amicroformat/arecipe/NutritionClass> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hcard> ;
+  rdfs:label "value" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/yield>
+  a owl:DatatypeProperty ;
+  rdfs:comment "Specifies the quantity produced by the recipe, like how many persons it satisfyies or how many pieces can be made of it." ;
+  rdfs:domain <http://purl.org/amicroformat/arecipe/Recipe> ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/hrecipe#yield> ;
+  rdfs:label "yield" ;
+  rdfs:range xsd:string .
+
+<http://purl.org/amicroformat/arecipe/IngredientClass>
+  a owl:Class ;
+  rdfs:comment "A helper class for constructing the RDF-graph" .
+
+<http://purl.org/amicroformat/arecipe/NutritionClass>
+  a owl:Class ;
+  rdfs:comment "A helper class for constructing the RDF-graph" .
+
+owl:Thing rdfs:subClassOf [
+    a owl:Restriction ;
+    rdfs:comment "The field MAY include valid HTML markup e.g. paragraphs or a list of steps." ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:unionOf (
+       xsd:string
+       <http://www.w3.org/TR/html/>
+     )
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/instructions>
+  ], [
+    a owl:Restriction ;
+    rdfs:comment "The element SHOULD use an <img> element. The element MAY use any other element that contains a URL, such as <a> or <object>, but it is not recommended. The contents of the element MUST follow the conventions outlined in <a href='http://microformats.org/wiki/hCard'>hCard</a>.", "Typically used with an <img> tag. Use the 'src' attribute for URI values. Use the 'data:' URI scheme for binary values. <http://www.ietf.org/rfc/rfc2426.txt>" ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:unionOf (
+       xsd:string
+       <http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.2>
+       <http://www.w3.org/TR/REC-html40/struct/links.html#h-12.2>
+       <http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.3>
+     )
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/photo>
+  ], [
+    a owl:Restriction ;
+    rdfs:comment "The contents of the element MUST include a valid <a href='http://microformats.org/wiki/hCard'>hCard</a>." ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:hasValue <http://microformats.org/wiki/hCard>
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/author>
+  ], [
+    a owl:Restriction ;
+    rdfs:comment "The <a href='http://microformats.org/wiki/datetime-design-pattern'>datetime-design-pattern</a> SHOULD be used to encode the published datetime." ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:unionOf (
+       xsd:string
+       <http://microformats.org/wiki/datetime-design-pattern>
+     )
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/published>
+  ], [
+    a owl:Restriction ;
+    rdfs:comment "The element MAY include the fields 'value' and 'type' following the conventions outlined in <a href='http://microformats.org/wiki/hCard'>hCard</a>. In this case each ingredient should be marked up with it's own ingredient element. These subelements are considered experimental and may be removed from the final specification or replaced by 'num' and 'unit' from <a href='http://microformats.org/wiki/measure'>measure</a>." ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:unionOf (
+       xsd:string
+       <http://www.w3.org/TR/html/>
+       <http://purl.org/amicroformat/arecipe/value>
+       <http://purl.org/amicroformat/arecipe/type>
+     )
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/ingredient>
+  ], [
+    a owl:Restriction ;
+    rdfs:comment "The element MAY include the fields 'value' and 'type' following the conventions outlined in <a href='http://microformats.org/wiki/hCard'>hCard</a>. In this case each ingredient should be marked up with it's own nutrition element. These subelements are considered experimental and may be removed from the final specification or replaced by 'num' and 'unit' from <a href='http://microformats.org/wiki/measure'>measure</a>." ;
+    owl:allValuesFrom [
+      a rdfs:Datatype ;
+      owl:unionOf (
+       xsd:string
+       <http://www.w3.org/TR/html/>
+       <http://purl.org/amicroformat/arecipe/value>
+       <http://purl.org/amicroformat/arecipe/type>
+     )
+    ] ;
+    owl:onProperty <http://purl.org/amicroformat/arecipe/nutrition>
+  ] .
+[]
+  a owl:Axiom ;
+  rdfs:comment "Some fields are marked experimental since they exceed the minimum set of elements needed to describe a recipe but still are very commonly used on the web. It's not sure if they are relevant enough for inclusion in the format. Implementation and general uptake of these elements will be observed and inform further decisions. So their use is not at all discouraged - but use them with care and be prepared for their eventual removal from the final spec." ;
+  owl:object <http://purl.org/amicroformat/arecipe/Recipe> ;
+  owl:predicate rdfs:domain ;
+  owl:subject <http://purl.org/amicroformat/arecipe/author>, <http://purl.org/amicroformat/arecipe/duration>, <http://purl.org/amicroformat/arecipe/instructions>, <http://purl.org/amicroformat/arecipe/nutrition>, <http://purl.org/amicroformat/arecipe/photo>, <http://purl.org/amicroformat/arecipe/published>, <http://purl.org/amicroformat/arecipe/summary>, <http://purl.org/amicroformat/arecipe/tag>, <http://purl.org/amicroformat/arecipe/type>, <http://purl.org/amicroformat/arecipe/value>, <http://purl.org/amicroformat/arecipe/yield> .
+
+[]
+  a owl:Axiom ;
+  rdfs:comment "Some fields are marked experimental since they exceed the minimum set of elements needed to describe a recipe but still are very commonly used on the web. It's not sure if they are relevant enough for inclusion in the format. Implementation and general uptake of these elements will be observed and inform further decisions. So their use is not at all discouraged - but use them with care and be prepared for their eventual removal from the final spec." ;
+  owl:object <http://purl.org/amicroformat/arecipe/IngredientClass>, <http://purl.org/amicroformat/arecipe/NutritionClass> ;
+  owl:predicate rdfs:domain ;
+  owl:subject <http://purl.org/amicroformat/arecipe/type>, <http://purl.org/amicroformat/arecipe/value> .

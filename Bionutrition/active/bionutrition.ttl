@@ -1,0 +1,914 @@
+﻿@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix : <http://www.owl-ontologies.com/Ontology1361987617.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+<http://www.owl-ontologies.com/Ontology1361987617.owl> a owl:Ontology .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Composition a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Composition rdfs:label "Nutrient Composition"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DesignDiet a owl:Class .
+:Nutrient_Composition rdfs:subClassOf :DesignDiet .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_dev a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_dev rdfs:subClassOf :Nutrient_Composition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_dev rdfs:label "Nutraceuticals Protocol Development"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Adjusted_Body_Weight_Equation_for_Obesity a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Predicted_Equation a owl:Class .
+:Adjusted_Body_Weight_Equation_for_Obesity rdfs:subClassOf :Predicted_Equation .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Adjusted_Body_Weight_Equation_for_Obesity rdfs:label "Adjusted Body Weight Equation for Obesity"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic_Diet_Protocol a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic_Diet_Protocol rdfs:label "Metabolic Diet Protocol"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Screening a owl:Class .
+:Metabolic_Diet_Protocol rdfs:subClassOf :Screening .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Fiber a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MacronutrientsControlled a owl:Class .
+:Fiber rdfs:subClassOf :MacronutrientsControlled .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Poly a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Unsaturated a owl:Class .
+:Poly rdfs:subClassOf :Unsaturated .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Regular a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+:Regular rdfs:subClassOf :DietPlan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Theraputic a owl:Class .
+:Regular rdfs:subClassOf :Theraputic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement rdfs:label "Hip Waist Measurement"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:Hip_Waist_Measurement rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+_:autos1 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Hip_Circumference a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_Circumference a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_To_Hip_Ratio a owl:Class .
+_:autos1 owl:intersectionOf _:autos2 .
+_:autos2 rdf:first :Hip_Waist_Measurement_Hip_Circumference .
+_:autos2 rdf:rest _:autos3 .
+_:autos3 rdf:first :Hip_Waist_Measurement_Waist_Circumference .
+_:autos3 rdf:rest _:autos4 .
+_:autos4 rdf:first :Hip_Waist_Measurement_Waist_To_Hip_Ratio .
+_:autos4 rdf:rest rdf:nil .
+:Hip_Waist_Measurement rdfs:subClassOf _:autos1 .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Saturated a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:FAT a owl:Class .
+:Saturated rdfs:subClassOf :FAT .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing_PctBodyFat a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing_PctBodyFat rdfs:label "Underwater Weighing Percent Body Fat"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing a owl:Class .
+:Underwater_Weighing_PctBodyFat rdfs:subClassOf :Underwater_Weighing .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Single_Nutrient_Intake a owl:Class .
+:Macronutrient rdfs:subClassOf :Single_Nutrient_Intake .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics rdfs:comment """<p style=\"margin-top: 0\">
+      Anthropometrics evaluates ...
+    </p>"""^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics rdfs:label "Anthropometrics"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:Anthropometrics rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+_:autos5 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_BMI a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Height a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Weight a owl:Class .
+_:autos5 owl:intersectionOf _:autos6 .
+_:autos6 rdf:first :Anthropometrics_BMI .
+_:autos6 rdf:rest _:autos7 .
+_:autos7 rdf:first :Anthropometrics_Height .
+_:autos7 rdf:rest _:autos8 .
+_:autos8 rdf:first :Anthropometrics_Weight .
+_:autos8 rdf:rest rdf:nil .
+:Anthropometrics rdfs:subClassOf _:autos5 .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Outpatient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietMealsServed a owl:Class .
+:Outpatient rdfs:subClassOf :DietMealsServed .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Snacks a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+:Snacks rdfs:subClassOf :DietPlan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MacronutrientsControlled a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic a owl:Class .
+:MacronutrientsControlled rdfs:subClassOf :Metabolic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MacronutrientsControlled rdfs:label "Macronutrients Controlled"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PctLeanMass a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodPod a owl:Class .
+:PctLeanMass rdfs:subClassOf :BodPod .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PctLeanMass rdfs:label "Percent Lean Mass"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing_PctLeanMass a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing a owl:Class .
+:Underwater_Weighing_PctLeanMass rdfs:subClassOf :Underwater_Weighing .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing_PctLeanMass rdfs:label "Underwater Weighing Percent Lean Mass"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Questionnaire a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Questionnaire rdfs:label "Activity Questionnaire"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Physical_Assessment a owl:Class .
+:Activity_Questionnaire rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:FAT a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:FAT rdfs:subClassOf :MacronutrientsControlled .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+_:autos9 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Saturated a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:TransFattyAcids a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Unsaturated a owl:Class .
+_:autos9 owl:intersectionOf _:autos10 .
+_:autos10 rdf:first :Saturated .
+_:autos10 rdf:rest _:autos11 .
+_:autos11 rdf:first :TransFattyAcids .
+_:autos11 rdf:rest _:autos12 .
+_:autos12 rdf:first :Unsaturated .
+_:autos12 rdf:rest rdf:nil .
+:FAT rdfs:subClassOf _:autos9 .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Energy_Expediture a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ResearchNutritionAssessmentProcedure a owl:Class .
+:Energy_Expediture rdfs:subClassOf :ResearchNutritionAssessmentProcedure .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Energy_Expediture rdfs:label "Energy Expediture"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Underwater_Weighing rdfs:label "Underwater Weighing"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:Underwater_Weighing rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_3 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_3 rdfs:label "Day Rotation 3"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Menu_Rotation a owl:Class .
+:Day_Rotation_3 rdfs:subClassOf :Menu_Rotation .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Whole_Calorimetry a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Whole_Calorimetry rdfs:label "Whole Calorimetry"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Whole_Calorimetry rdfs:subClassOf :Energy_Expediture .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:TransFattyAcids a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:TransFattyAcids rdfs:subClassOf :FAT .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:TransFattyAcids rdfs:label "Trans Fatty Acids"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Formula a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Theraputic a owl:Class .
+:Formula rdfs:subClassOf :Theraputic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Resveratrol a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Resveratrol rdfs:label "Nutraceuticals Protocol Development Resveratrol"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Resveratrol rdfs:subClassOf :Nutraceuticals_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_BMI a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_BMI rdfs:subClassOf :Anthropometrics .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_BMI rdfs:label "Anthropometrics BMI"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Enteral a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Enteral rdfs:subClassOf :Formula .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:WholeFood a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:WholeFood rdfs:label "Whole Food"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Theraputic a owl:Class .
+:WholeFood rdfs:subClassOf :Theraputic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietMealsServed a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietMealsServed rdfs:label "Diet Meals Served"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+:DietMealsServed rdfs:subClassOf :DietPlan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ResearchNutritionAssessmentProcedure a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionRoles a owl:Class .
+:ResearchNutritionAssessmentProcedure rdfs:subClassOf :NutritionRoles .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ResearchNutritionAssessmentProcedure rdfs:label "Research Nutrition Assessment Procedure"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ResearchNutritionAssessmentProcedure rdfs:comment "Procedures used in the Bionutrition domain"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Weight a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Weight rdfs:subClassOf :Anthropometrics .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Weight rdfs:label "Anthropometrics Weight"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Factor_or_Equation a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Physical_Assessment a owl:Class .
+:Activity_Factor_or_Equation rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Factor_or_Equation rdfs:label "Activity Factor or Equation"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hour_24_Diet_Recall a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Analysis a owl:Class .
+:Hour_24_Diet_Recall rdfs:subClassOf :Nutrient_Analysis .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hour_24_Diet_Recall rdfs:label "Hour 24 Diet Recall"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ScientificLiterature a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ScientificLiterature rdfs:label "Scientific Literature"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ProtocolDevelopment a owl:Class .
+:ScientificLiterature rdfs:subClassOf :ProtocolDevelopment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:Skinfold rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DEXA a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:DEXA rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Theraputic a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+:Theraputic rdfs:subClassOf :DietPlan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Screening a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan a owl:Class .
+:Screening rdfs:subClassOf :Nutrition_Assessment_Care_Plan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Single_Nutrient_Intake a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Analysis a owl:Class .
+:Single_Nutrient_Intake rdfs:subClassOf :Nutrient_Analysis .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Single_Nutrient_Intake rdfs:label "Single Nutrient Intake"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Micronutrient_Prot_dev a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Micronutrient_Prot_dev rdfs:label "Micronutrient Protocol Development"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Micronutrient_Prot_dev rdfs:subClassOf :Nutrient_Composition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_1_Inpatient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_1_Inpatient rdfs:label "Day 1 Inpatient"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:RotatingMenuCycle a owl:Class .
+:Day_1_Inpatient rdfs:subClassOf :RotatingMenuCycle .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Recall a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Analysis a owl:Class .
+:Food_Recall rdfs:subClassOf :Nutrient_Analysis .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Recall rdfs:label "Food Recall"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Analysis a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrient_Analysis rdfs:label "Nutrient Analysis"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan a owl:Class .
+:Nutrient_Analysis rdfs:subClassOf :Nutrition_Assessment_Care_Plan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Physical_Assessment a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Physical_Assessment rdfs:subClassOf :ResearchNutritionAssessmentProcedure .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Activity_Physical_Assessment rdfs:label "Activity Physical Assessment"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Mono a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Unsaturated a owl:Class .
+:Mono rdfs:subClassOf :Unsaturated .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Inpatient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Inpatient rdfs:subClassOf :DietMealsServed .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Diet_Review a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Diet_Review rdfs:subClassOf :Screening .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Diet_Review rdfs:label "Diet Review"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_5 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_5 rdfs:label "Day Rotation 5"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Menu_Rotation a owl:Class .
+:Day_Rotation_5 rdfs:subClassOf :Menu_Rotation .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Menu_Rotation a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Menu_Rotation rdfs:label "Menu Rotation"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DesignDiet a owl:Class .
+:Menu_Rotation rdfs:subClassOf :DesignDiet .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Assessory_Nutrient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Assessory_Nutrient rdfs:subClassOf :Single_Nutrient_Intake .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Assessory_Nutrient rdfs:label "Assessory Nutrient"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Treadmill a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Treadmill rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Bike a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Bike rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Frequency_Questionnaires a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Frequency_Questionnaires rdfs:label "Food Frequency Questionnaires"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Frequency_Questionnaires rdfs:subClassOf :Nutrient_Analysis .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Fat a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Fat rdfs:label "Macronutrient Protocol Development Fat"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev a owl:Class .
+:Macronutrient_Prot_Dev_Fat rdfs:subClassOf :Macronutrient_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:CHO a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:CHO rdfs:subClassOf :MacronutrientsControlled .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_7_Day a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_7_Day rdfs:subClassOf :Food_Recall .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_7_Day rdfs:label "Food Record 7 Day"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ProtocolDevelopment a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionRoles a owl:Class .
+:ProtocolDevelopment rdfs:subClassOf :NutritionRoles .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:ProtocolDevelopment rdfs:label "Protocol Development"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DesignDiet a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DesignDiet rdfs:label "Design Diet"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DesignDiet rdfs:subClassOf :ProtocolDevelopment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Subscapular a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Subscapular rdfs:label "Skinfold Subscapular"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Subscapular rdfs:subClassOf :Skinfold .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionCapabilities a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionCapabilities rdfs:label "Nutrition Capabilities"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Unsaturated a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Unsaturated rdfs:subClassOf :FAT .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+_:autos13 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Mono a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Poly a owl:Class .
+_:autos13 owl:intersectionOf _:autos14 .
+_:autos14 rdf:first :Mono .
+_:autos14 rdf:rest _:autos15 .
+_:autos15 rdf:first :Poly .
+_:autos15 rdf:rest rdf:nil .
+:Unsaturated rdfs:subClassOf _:autos13 .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Grip_Strength a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Grip_Strength rdfs:label "Grip Strength"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Grip_Strength rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_To_Hip_Ratio a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_To_Hip_Ratio rdfs:subClassOf :Hip_Waist_Measurement .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_To_Hip_Ratio rdfs:label "Hip Waist Measurement Waist To Hip Ratio"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionRoles a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionRoles rdfs:subClassOf :NutritionCapabilities .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:NutritionRoles rdfs:label "Nutrition Roles"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Navigation a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Navigation rdfs:subClassOf :ProtocolDevelopment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Carbohydrate a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Carbohydrate rdfs:label "Macronutrient Protocol Development Carbohydrate"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev a owl:Class .
+:Macronutrient_Prot_Dev_Carbohydrate rdfs:subClassOf :Macronutrient_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Spirometry a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Spirometry rdfs:subClassOf :Whole_Calorimetry .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Height a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Height rdfs:label "Anthropometrics Height"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Anthropometrics_Height rdfs:subClassOf :Anthropometrics .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Education a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan a owl:Class .
+:Education rdfs:subClassOf :Nutrition_Assessment_Care_Plan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Predicted_Equation a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Predicted_Equation rdfs:subClassOf :Energy_Expediture .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Predicted_Equation rdfs:label "Predicted Equation"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+:Metabolic rdfs:subClassOf :DietPlan .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodPod a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+:BodPod rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodPod rdfs:label "BodPod"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan rdfs:label "Diet Plan"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:DietPlan rdfs:subClassOf :NutritionRoles .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Group a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Group rdfs:subClassOf :Education .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:RotatingMenuCycle a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:RotatingMenuCycle rdfs:subClassOf :Metabolic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:RotatingMenuCycle rdfs:label "Rotating Menu Cycle"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_5_Inpatient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_5_Inpatient rdfs:label "Day 5 Inpatient"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_5_Inpatient rdfs:subClassOf :RotatingMenuCycle .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Individual a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Individual rdfs:subClassOf :Education .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Suprailiac a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Suprailiac rdfs:subClassOf :Skinfold .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Skinfold_Suprailiac rdfs:label "Skinfold Suprailiac"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Protein a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Protein rdfs:label "Macronutrient Protocol Development Protein"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev a owl:Class .
+:Macronutrient_Prot_Dev_Protein rdfs:subClassOf :Macronutrient_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Fiber a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev a owl:Class .
+:Macronutrient_Prot_Dev_Fiber rdfs:subClassOf :Macronutrient_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_Dev_Fiber rdfs:label "Macronutrient Protocol Development Fiber"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_2_Inpatient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_2_Inpatient rdfs:subClassOf :RotatingMenuCycle .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_2_Inpatient rdfs:label "Day 2 Inpatient"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Parenteral a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Parenteral rdfs:subClassOf :Formula .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev rdfs:subClassOf :Nutrient_Composition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Macronutrient_Prot_dev rdfs:label "Macronutrient Protocol Development"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Water a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Water rdfs:subClassOf :MacronutrientsControlled .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Minute_6_Walk a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Minute_6_Walk rdfs:subClassOf :Activity_Physical_Assessment .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Minute_6_Walk rdfs:label "6 Minute Walk"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition rdfs:comment """<p style=\"margin-top: 0\">
+      Body Composition is evaluated through multiple procedures
+    </p>"""^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition rdfs:subClassOf :ResearchNutritionAssessmentProcedure .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:BodyComposition rdfs:label "Body Composition"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic_Monitor_Cart a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic_Monitor_Cart rdfs:label "Metabolic Monitor Cart"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Metabolic_Monitor_Cart rdfs:subClassOf :Energy_Expediture .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_1 a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_1 rdfs:label "Day Rotation 1"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Day_Rotation_1 rdfs:subClassOf :Menu_Rotation .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PctBodyFat a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PctBodyFat rdfs:label "Percent Body Fat"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PctBodyFat rdfs:subClassOf :BodPod .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_3_4_Day a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_3_4_Day rdfs:label "Food Record 3 4 Day"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Food_Record_3_4_Day rdfs:subClassOf :Food_Recall .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Bioelectric_Impedence a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Bioelectric_Impedence rdfs:subClassOf :BodyComposition .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Bioelectric_Impedence rdfs:label "Bioelectric Impedence"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PRO a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:PRO rdfs:subClassOf :MacronutrientsControlled .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Hip_Circumference a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Hip_Circumference rdfs:subClassOf :Hip_Waist_Measurement .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Hip_Circumference rdfs:label "Hip Waist Measurement Hip Circumference"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Micronutrient a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Micronutrient rdfs:subClassOf :Single_Nutrient_Intake .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids rdfs:label "Nutraceuticals Protocol Development Omega 3 Fatty Acids"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids rdfs:subClassOf :Nutraceuticals_Prot_dev .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MicronutrientsControlled a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MicronutrientsControlled rdfs:label "Micronutrients Controlled"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:MicronutrientsControlled rdfs:subClassOf :Metabolic .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan rdfs:label "Nutrition Assessment Care Plan"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Nutrition_Assessment_Care_Plan rdfs:subClassOf :ResearchNutritionAssessmentProcedure .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Harris_Benedict_Equation a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Harris_Benedict_Equation rdfs:subClassOf :Predicted_Equation .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Harris_Benedict_Equation rdfs:label "Harris Benedict Equation"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_Circumference a owl:Class .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_Circumference rdfs:subClassOf :Hip_Waist_Measurement .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:Hip_Waist_Measurement_Waist_Circumference rdfs:label "Hip Waist Measurement Waist Circumference"^^xsd:string .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:hasSubtype a owl:ObjectProperty .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:hasSubsection a owl:ObjectProperty .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:hasAnalyticalAssessment a owl:ObjectProperty .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .
+:hasComposingMeasurements a owl:ObjectProperty .
+@base <http://www.owl-ontologies.com/Ontology1361987617.owl> .

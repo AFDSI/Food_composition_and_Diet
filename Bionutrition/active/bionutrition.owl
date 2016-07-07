@@ -1,0 +1,1101 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:metadata="http://data.bioontology.org/metadata/">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.bioontology.org/metadata/prefixIRI -->
+
+    <AnnotationProperty rdf:about="http://data.bioontology.org/metadata/prefixIRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#hasAnalyticalAssessment -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#hasAnalyticalAssessment"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#hasComposingMeasurements -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#hasComposingMeasurements"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#hasSubsection -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#hasSubsection"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#hasSubtype -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#hasSubtype"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Factor_or_Equation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Factor_or_Equation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity Factor or Equation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_Factor_or_Equation</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity Physical Assessment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_Physical_Assessment</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Questionnaire -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Questionnaire">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity Questionnaire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_Questionnaire</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Adjusted_Body_Weight_Equation_for_Obesity -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Adjusted_Body_Weight_Equation_for_Obesity">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjusted Body Weight Equation for Obesity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Predicted_Equation"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjusted_Body_Weight_Equation_for_Obesity</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_BMI"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Height"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Weight"/>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Anthropometrics evaluates ...
+    &lt;/p&gt;</rdfs:comment>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_BMI -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_BMI">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics BMI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics_BMI</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Height -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Height">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics Height</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics_Height</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Weight -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics_Weight">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics Weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Anthropometrics"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometrics_Weight</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Assessory_Nutrient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Assessory_Nutrient">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assessory Nutrient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Single_Nutrient_Intake"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assessory_Nutrient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Bike -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Bike">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bike</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Bioelectric_Impedence -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Bioelectric_Impedence">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioelectric Impedence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioelectric_Impedence</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#BodPod -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#BodPod">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodPod</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodPod</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body Composition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;p style=&quot;margin-top: 0&quot;&gt;
+      Body Composition is evaluated through multiple procedures
+    &lt;/p&gt;</rdfs:comment>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyComposition</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#CHO -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#CHO">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#DEXA -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#DEXA">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEXA</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_1_Inpatient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_1_Inpatient">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day 1 Inpatient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#RotatingMenuCycle"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_1_Inpatient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_2_Inpatient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_2_Inpatient">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day 2 Inpatient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#RotatingMenuCycle"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_2_Inpatient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_5_Inpatient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_5_Inpatient">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day 5 Inpatient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#RotatingMenuCycle"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_5_Inpatient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_1 -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day Rotation 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Menu_Rotation"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_Rotation_1</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_3 -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day Rotation 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Menu_Rotation"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_Rotation_3</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_5 -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Day_Rotation_5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day Rotation 5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Menu_Rotation"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day_Rotation_5</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#DesignDiet -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#DesignDiet">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Design Diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ProtocolDevelopment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DesignDiet</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#DietMealsServed -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#DietMealsServed">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet Meals Served</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DietMealsServed</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet Plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionRoles"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DietPlan</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Diet_Review -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Diet_Review">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet Review</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Screening"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet_Review</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Education -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Education">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrition_Assessment_Care_Plan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Energy_Expediture -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Energy_Expediture">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Expediture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy_Expediture</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Enteral -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Enteral">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Formula"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enteral</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#FAT -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#FAT">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Saturated"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#TransFattyAcids"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Unsaturated"/>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAT</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Fiber -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Fiber">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiber</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Frequency_Questionnaires -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Frequency_Questionnaires">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Frequency Questionnaires</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food_Frequency_Questionnaires</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Recall -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Recall">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Recall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food_Recall</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Record_3_4_Day -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Record_3_4_Day">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Record 3 4 Day</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Recall"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food_Record_3_4_Day</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Record_7_Day -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Record_7_Day">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Record 7 Day</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Food_Recall"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food_Record_7_Day</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Formula -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Formula">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Theraputic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formula</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Grip_Strength -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Grip_Strength">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grip Strength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grip_Strength</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Group -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Group">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Education"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Harris_Benedict_Equation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Harris_Benedict_Equation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harris Benedict Equation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Predicted_Equation"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harris_Benedict_Equation</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip Waist Measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Hip_Circumference"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_Circumference"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_To_Hip_Ratio"/>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip_Waist_Measurement</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Hip_Circumference -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Hip_Circumference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip Waist Measurement Hip Circumference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip_Waist_Measurement_Hip_Circumference</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_Circumference -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_Circumference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip Waist Measurement Waist Circumference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip_Waist_Measurement_Waist_Circumference</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_To_Hip_Ratio -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement_Waist_To_Hip_Ratio">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip Waist Measurement Waist To Hip Ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Hip_Waist_Measurement"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hip_Waist_Measurement_Waist_To_Hip_Ratio</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Hour_24_Diet_Recall -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Hour_24_Diet_Recall">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hour 24 Diet Recall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hour_24_Diet_Recall</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Individual -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Individual">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Education"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Inpatient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Inpatient">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietMealsServed"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inpatient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Single_Nutrient_Intake"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Carbohydrate -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Carbohydrate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient Protocol Development Carbohydrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient_Prot_Dev_Carbohydrate</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Fat -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Fat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient Protocol Development Fat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient_Prot_Dev_Fat</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Fiber -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Fiber">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient Protocol Development Fiber</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient_Prot_Dev_Fiber</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Protein -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_Dev_Protein">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient Protocol Development Protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient_Prot_Dev_Protein</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Macronutrient_Prot_dev">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient Protocol Development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Composition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrient_Prot_dev</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macronutrients Controlled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MacronutrientsControlled</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Menu_Rotation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Menu_Rotation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menu Rotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DesignDiet"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menu_Rotation</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic_Diet_Protocol -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic_Diet_Protocol">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic Diet Protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Screening"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic_Diet_Protocol</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic_Monitor_Cart -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic_Monitor_Cart">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic Monitor Cart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Energy_Expediture"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic_Monitor_Cart</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Micronutrient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Micronutrient">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Single_Nutrient_Intake"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micronutrient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Micronutrient_Prot_dev -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Micronutrient_Prot_dev">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micronutrient Protocol Development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Composition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micronutrient_Prot_dev</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#MicronutrientsControlled -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#MicronutrientsControlled">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micronutrients Controlled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MicronutrientsControlled</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Minute_6_Walk -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Minute_6_Walk">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 Minute Walk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minute_6_Walk</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Mono -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Mono">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Unsaturated"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Navigation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Navigation">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ProtocolDevelopment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Navigation</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals Protocol Development Omega 3 Fatty Acids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_Dev_Resveratrol -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_Dev_Resveratrol">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals Protocol Development Resveratrol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_dev"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals_Prot_Dev_Resveratrol</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_dev -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutraceuticals_Prot_dev">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals Protocol Development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Composition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutraceuticals_Prot_dev</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrient Analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrition_Assessment_Care_Plan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrient_Analysis</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Composition -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Composition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrient Composition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DesignDiet"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrient_Composition</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionCapabilities -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionCapabilities">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition Capabilities</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NutritionCapabilities</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionRoles -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionRoles">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition Roles</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionCapabilities"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NutritionRoles</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrition_Assessment_Care_Plan -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrition_Assessment_Care_Plan">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition Assessment Care Plan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition_Assessment_Care_Plan</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Outpatient -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Outpatient">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietMealsServed"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outpatient</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#PRO -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#PRO">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRO</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Parenteral -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Parenteral">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Formula"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parenteral</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#PctBodyFat -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#PctBodyFat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Percent Body Fat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodPod"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PctBodyFat</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#PctLeanMass -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#PctLeanMass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Percent Lean Mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodPod"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PctLeanMass</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Poly -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Poly">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Unsaturated"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poly</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Predicted_Equation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Predicted_Equation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicted Equation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Energy_Expediture"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicted_Equation</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#ProtocolDevelopment -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#ProtocolDevelopment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protocol Development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionRoles"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProtocolDevelopment</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Regular -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Regular">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Theraputic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regular</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#ResearchNutritionAssessmentProcedure">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research Nutrition Assessment Procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#NutritionRoles"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procedures used in the Bionutrition domain</rdfs:comment>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResearchNutritionAssessmentProcedure</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#RotatingMenuCycle -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#RotatingMenuCycle">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotating Menu Cycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Metabolic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RotatingMenuCycle</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Saturated -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Saturated">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#FAT"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saturated</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#ScientificLiterature -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#ScientificLiterature">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific Literature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#ProtocolDevelopment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ScientificLiterature</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Screening -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Screening">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrition_Assessment_Care_Plan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screening</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Single_Nutrient_Intake -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Single_Nutrient_Intake">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single Nutrient Intake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Nutrient_Analysis"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single_Nutrient_Intake</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skinfold</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold_Subscapular -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold_Subscapular">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skinfold Subscapular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skinfold_Subscapular</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold_Suprailiac -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold_Suprailiac">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skinfold Suprailiac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Skinfold"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skinfold_Suprailiac</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Snacks -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Snacks">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snacks</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Spirometry -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Spirometry">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Whole_Calorimetry"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spirometry</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Theraputic -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Theraputic">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#DietPlan"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theraputic</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#TransFattyAcids -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#TransFattyAcids">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Fatty Acids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#FAT"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TransFattyAcids</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Treadmill -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Treadmill">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Activity_Physical_Assessment"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treadmill</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater Weighing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#BodyComposition"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater_Weighing</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing_PctBodyFat -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing_PctBodyFat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater Weighing Percent Body Fat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater_Weighing_PctBodyFat</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing_PctLeanMass -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing_PctLeanMass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater Weighing Percent Lean Mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Underwater_Weighing"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underwater_Weighing_PctLeanMass</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Unsaturated -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Unsaturated">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#FAT"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Mono"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Poly"/>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsaturated</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Water -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Water">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#MacronutrientsControlled"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#WholeFood -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#WholeFood">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Theraputic"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WholeFood</metadata:prefixIRI>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1361987617.owl#Whole_Calorimetry -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/Ontology1361987617.owl#Whole_Calorimetry">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Calorimetry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1361987617.owl#Energy_Expediture"/>
+        <metadata:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole_Calorimetry</metadata:prefixIRI>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

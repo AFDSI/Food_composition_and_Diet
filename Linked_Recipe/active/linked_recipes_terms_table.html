@@ -1,0 +1,565 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,minimum-scale=1,initial-scale=1'><meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<title>Linked Recipe Schema</title>
+<base href='http://ontomatica.com' target='_blank'>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700'>
+<link rel='stylesheet' type='text/css' href='/service/style/application/RDFa/style_table_min.css'>
+</head><body><h3>Last accessed: </h3>
+
+<div xmlns:dc="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema">schema</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="The Linked Recipe schema is intended to support the expression of recipes using RDF technology.">
+<div class="property-object">The Linked Recipe schema is intended to support the expression of recipes using RDF technology.</div>
+</td>
+</tr>
+<tr class="http://purl.org/dc/terms/created">
+<td><a class="browse" href="http://purl.org/dc/terms/created" title="Browse http://purl.org/dc/terms/created">created</a></td>
+<td xmlns:d1e129="http://www.w3.org/2001/XMLSchema#" property="dc:created" content="2015-04-02" datatype="xsd:date">
+<div class="property-object">2015-04-02</div>
+</td>
+</tr>
+<tr class="http://purl.org/dc/terms/title">
+<td><a class="browse" href="http://purl.org/dc/terms/title" title="Browse http://purl.org/dc/terms/title">title</a></td>
+<td property="dc:title" content="Linked Recipe Schema" xml:lang="en">
+<div class="property-object">Linked Recipe Schema</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient">Ingredient</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a food stuff used in a recipe">
+<div class="property-object">a food stuff used in a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Ingredient">
+<div class="property-object">Ingredient</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a portion of some food stuff or ingredient used in a recipe">
+<div class="property-object">a portion of some food stuff or ingredient used in a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Ingredient Portion">
+<div class="property-object">Ingredient Portion</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/PreparationMethod" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/PreparationMethod" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/PreparationMethod">Preparation Method</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a means of preparation uses in a recipe">
+<div class="property-object">a means of preparation uses in a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Preparation Method">
+<div class="property-object">Preparation Method</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="A recipe">
+<div class="property-object">A recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Recipe">
+<div class="property-object">Recipe</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/Step" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Step" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Step">Recipe Step</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a step or instruction in a recipe">
+<div class="property-object">a step or instruction in a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Recipe Step">
+<div class="property-object">Recipe Step</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/Tool" typeof="rdfs:Class">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Tool" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Tool">Tool</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Class" title="Browse http://www.w3.org/2000/01/rdf-schema#Class">Class</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a cooking implement or tool">
+<div class="property-object">a cooking implement or tool</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="Tool">
+<div class="property-object">Tool</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/course" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/course" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/course">course</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/cuisine" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/cuisine" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/cuisine">cuisine</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/dietaryInformation" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/dietaryInformation" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/dietaryInformation">dietaryInformation</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/ingredient" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/ingredient">ingredient</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="property used to connect a Recipe or a Step to the portion of an ingredient it uses">
+<div class="property-object">property used to connect a Recipe or a Step to the portion of an ingredient it uses</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="ingredient">
+<div class="property-object">ingredient</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/ingredientOf" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/ingredientOf" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/ingredientOf">ingredient</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="property used to connect an IngredientPortion with a Recipe or Step">
+<div class="property-object">property used to connect an IngredientPortion with a Recipe or Step</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="ingredient">
+<div class="property-object">ingredient</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/pairsWith" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/pairsWith" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/pairsWith">pairs with</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="associates two ingredients, indicating that they pair well or combine nicely in recipes">
+<div class="property-object">associates two ingredients, indicating that they pair well or combine nicely in recipes</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient">Ingredient</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="pairs with">
+<div class="property-object">pairs with</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient">Ingredient</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/portion" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/portion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/portion">portion</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="associates a portion of an ingredient with an ingredient or food stuff">
+<div class="property-object">associates a portion of an ingredient with an ingredient or food stuff</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="portion">
+<div class="property-object">portion</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient">Ingredient</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/portionOf" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/portionOf" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/portionOf">portion of</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="associates an ingredient with a portion of that ingredient used in a recipe">
+<div class="property-object">associates an ingredient with a portion of that ingredient used in a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Ingredient">Ingredient</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="portion of">
+<div class="property-object">portion of</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/quantity" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/quantity" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/quantity">quantity</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="the quantity of an ingredient">
+<div class="property-object">the quantity of an ingredient</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="quantity">
+<div class="property-object">quantity</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Literal" title="Browse http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/season" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/season" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/season">season</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="a means of classifying a Recipe based on its seasonality">
+<div class="property-object">a means of classifying a Recipe based on its seasonality</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="season">
+<div class="property-object">season</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2004/02/skos/core#Concept" title="Browse http://www.w3.org/2004/02/skos/core#Concept">Concept</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/servings" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/servings" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/servings">servings</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="the number of servings that are produced by a recipe">
+<div class="property-object">the number of servings that are produced by a recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="servings">
+<div class="property-object">servings</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Literal" title="Browse http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/skillLevel" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/skillLevel" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/skillLevel">skill level</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="indication of the skill level associated with a Recipe">
+<div class="property-object">indication of the skill level associated with a Recipe</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="skill level">
+<div class="property-object">skill level</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Literal" title="Browse http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/steps" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/steps" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/steps">steps</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="the list of steps associated with a Recipe. Expressed as an rdf:List">
+<div class="property-object">the list of steps associated with a Recipe. Expressed as an rdf:List</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="steps">
+<div class="property-object">steps</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/time" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/time" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/time">time</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="indication of the expected time that cooking a recipe with take">
+<div class="property-object">indication of the expected time that cooking a recipe with take</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/Recipe" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/Recipe">Recipe</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="time">
+<div class="property-object">time</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Literal" title="Browse http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/unit" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/unit" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/unit">unit</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="the amount of an ingredient used in a recipe or step">
+<div class="property-object">the amount of an ingredient used in a recipe or step</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#domain">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#domain" title="Browse http://www.w3.org/2000/01/rdf-schema#domain">domain</a></td>
+<td>
+<div class="property-object" rel="rdfs:domain"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/IngredientPortion">Ingredient Portion</a></div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="unit">
+<div class="property-object">unit</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#range">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#range" title="Browse http://www.w3.org/2000/01/rdf-schema#range">range</a></td>
+<td>
+<div class="property-object" rel="rdfs:range"><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#Literal" title="Browse http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/usedIn" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/usedIn" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/usedIn">used in</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="inverse of uses">
+<div class="property-object">inverse of uses</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="used in">
+<div class="property-object">used in</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<table about="http://ontomatica.com/public/test/linkedrecipes/schema/uses" typeof="rdf:Property">
+<tr>
+<th colspan="2"><a class="browse" href="http://ontomatica.com/public/test/linkedrecipes/schema/uses" title="Browse http://ontomatica.com/public/test/linkedrecipes/schema/uses">uses</a><div xmlns="" class="connector"> a </div><a class="browse" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" title="Browse http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a></th>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#comment">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#comment" title="Browse http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+<td property="rdfs:comment" content="generic use relationship that associated a preparation method with a tool that is used in the method, or a recipe with a tool that is used">
+<div class="property-object">generic use relationship that associated a preparation method with a tool that is used in the method, or a recipe with a tool
+that is used
+</div>
+</td>
+</tr>
+<tr class="http://www.w3.org/2000/01/rdf-schema#label">
+<td><a class="browse" href="http://www.w3.org/2000/01/rdf-schema#label" title="Browse http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+<td property="rdfs:label" content="uses">
+<div class="property-object">uses</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
